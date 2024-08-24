@@ -1,0 +1,135 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root
+{
+    --main-color:#0aad0a;
+    --light-color:#f0f3f2;
+    --shadow: rgba(145,158,171,.2) 0px 2px 4px -1px,rgba(145,158,171,.14) 0px 4px 5px 0px,rgba(145,158,171,.12) 0px 1px 10px 0px;
+    --font-family:'Encode Sans Expanded', sans-serif;
+    --rating-color:#ffc908;
+}
+
+.nav{
+    height: 50px;
+}
+
+body{
+    padding-top: 60px;
+    overflow-x: hidden;
+}
+
+h2{
+    font-size: x-large;
+    font-weight: 700;
+    color: rgb(0, 95, 158);
+}
+h1{
+    font-weight: 500;
+    font-size: calc(1.325rem + .9vw);
+}
+p{
+    border-radius: 10px;
+    font-size: large;
+}
+
+.container{
+    width: 95%;
+}
+
+.row{
+    @apply flex flex-wrap items-center py-8 px-4
+}
+
+span{
+    font-size: 20px;
+    color: green;
+    font-weight: 700;
+    display: block;
+}
+
+.product:hover
+{
+    box-shadow: var(--shadow);
+    border: solid 1px var(--main-color);
+}
+.brand{
+    transition: all .5s ;
+    border: #ececec 2px solid ;
+    border-radius: 5px;
+}
+.brand:hover{
+    box-shadow: rgba(10, 173, 10, 0.545) 0px 0px 10px 1px;
+    border: solid 1px var(--main-color);
+}
+
+
+.product .btn 
+{
+    transition: transform 1s , opacity 1s;
+    transform: translateY(100%);
+    opacity: 0;
+    background-color: #0aad0a;
+    padding: 10px;
+    border-radius: 6px;
+    color: white;
+}
+.product:hover .btn 
+{
+    opacity: 1;
+    transform: translateY(0%);
+}
+
+.img-categoris{
+    height: 200px;
+}
+.slick-dots li button:before {
+    content: '';
+    display: block;
+    width: 20px; 
+    height: 8px; 
+    border-radius: 4px;
+    margin-top: 20px;
+    background-color: grey;
+}
+.h-category{
+    font-size: 27px;
+    margin-top: 0;
+    margin-bottom: .5rem;
+    font-weight: 500;
+    line-height: 1.2;
+    color: var(--bs-heading-color);
+}
+
+h1{
+    color: #0aad0a;
+    font-size: 40px;
+}
+
+.categories{
+    transition: all .5s ;
+    border: #ececec 2px solid ;
+    border-radius: 5px;
+}
+.categoriess p{
+    color: #0aad0a;
+    font-size: calc(1.3rem + .6vw);
+    
+}
+.categories:hover{
+    box-shadow: rgba(10, 173, 10, 0.545) 0px 0px 10px 1px;
+    border: solid 1px var(--main-color);
+}
+
+.link{
+    outline: #0aad0a solid 2px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.but{
+    outline: cornflowerblue solid 2px;
+    padding: 10px;
+    border-radius: 5px;
+}
