@@ -33,6 +33,7 @@ let navigat = useNavigate()
                       <NavLink className='py-2 sm:py-2 md:py-2 lg:py-0 mx-2 text-lg text-slate-900 font-normal' to={'categores'}>Categores</NavLink>
                       <NavLink className='py-2 sm:py-2 md:py-2 lg:py-0 mx-2 text-lg text-slate-900 font-normal' to={'prands'}>Brands</NavLink>
                       <NavLink className='py-2 sm:py-2 md:py-2 lg:py-0 mx-2 text-lg text-slate-900 font-normal' to={'product'}>Broduct</NavLink>
+                      <NavLink className='py-2 sm:py-2 md:py-2 lg:py-0 mx-2 text-lg text-slate-900 font-normal' to={'favorites'}>favorits</NavLink>
             </>:null}
           </Nav>
 
